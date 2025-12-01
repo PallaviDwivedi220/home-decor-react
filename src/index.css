@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Warm brand palette */
+    --background: 36 33% 98%; /* cream */
+    --foreground: 222 47% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --muted: 36 20% 95%;
+    --muted-foreground: 24 6% 40%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+    --border: 24 10% 90%;
+    --input: 24 10% 90%;
+    --primary: 38 56% 55%; /* soft gold */
+    --primary-foreground: 36 33% 98%;
+    --secondary: 24 20% 92%; /* beige */
+    --secondary-foreground: 24 6% 20%;
+    --accent: 140 16% 80%; /* nature hint */
+    --accent-foreground: 222 47% 11%;
+    --ring: 38 56% 55%;
+    --radius: 0.75rem; /* rounded corners */
+  }
+
+  * {
+    border-color: hsl(var(--border));
+  }
+
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
